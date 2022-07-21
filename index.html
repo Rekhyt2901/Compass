@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alex Cool Compass</title>
+        <meta name="description" content="Find any Location!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    </head>
+    <body>
+        <h1 id="titel">Alex Cooler Compass</h1>
+
+        <input id="pac-input" class="controls" type="text" placeholder="Search Box" style="display: none;"/>
+        <div id="map" style="display: none;"></div>
+        <button id="mapButton">Show Map</button>
+
+        
+        <div id="compassContainer">
+            <img id="compass" src="./arrow.png" alt="Arrow">
+            <h2 id="distanceHeader">Choose a Location on the Map!</h2>
+            <div id="distance"></div>
+        </div>
+
+        <div id="info" style="display: none;">
+            <h2>My Position</h2>
+            <div id="myCoords"></div>
+            <h2>Map Position</h2>
+            <div id="mapCoords"></div>
+            <h2>Bearing</h2>
+            <div id="direction"></div>
+            <div id="log"></div>
+        </div>
+        <button id="infoButton">Show Info</button>
+
+        <button id="shareButton">Share location Link</button>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHDEnxTEjVYrqOFo8nI8ghv7lWzp5mRzo&libraries=places" defer></script>
+        <script src="./index.js" defer></script>
+    </body>
+</html>
