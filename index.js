@@ -8,6 +8,7 @@ let distance;
 let direction;
 
 let loadedUrlLocation = false;
+let oldMarker;
 
 /* Log Console to HTML
 (function () {
@@ -132,8 +133,9 @@ function initMap() {
                 marker.setMap(null);
             });
             markers = [];
+            oldMarker.setMap(null);
             markers.push(
-                new google.maps.Marker({
+                oldMarker = new google.maps.Marker({
                     map,
                     title: "",
                     position: {
